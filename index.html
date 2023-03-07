@@ -24,24 +24,43 @@
       display: flex;
       width: 100%;
       background-color: #2c3e50;
+      /* background-color: black;  */
       justify-content: center;
       align-items: center;
       margin: 0 auto 0 auto;
       font-size: 2em;
     }
     .content-w {
-      width: 60%;
+      width: 90%;
       margin: 40px auto 30px auto;
       line-height: 2em;
     }
     .intro {
       width: 100%;
       margin: 0 auto 0 auto;
+      background-color: #e6e9e6;
+      padding: 2em;
+      border-radius: 10px 10%;
     }
     .intro-wrapper {
       display: flex;
-      flex-direction: column;
+      /* flex-direction: column; */
       padding-bottom: 3em;
+      flex-direction: row;
+      align-items: left;
+    }
+    .intro-img {
+      padding: 7em 1em 0 1em;
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: start;
+      align-items: center;
+      font-size: 1em;
+    }
+    .obras-wrapper {
+      background-color: white;
     }
 
     @media only screen and (max-width: 768px) {
@@ -58,28 +77,41 @@
       }
       .intro-wrapper {
         padding-bottom: unset;
+        flex-wrap: wrap;
       }
       .intro {
-        width: 90%;
+        padding: 2em;
+      }
+      .intro-img {
+        display: none;
       }
     }
   </style>
-  <body style="font-family: 'Poppins', sans-serif; background-color: #ffffff">
+  <body
+    style="
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+    "
+  >
     <div style="display: flex; flex-direction: column">
       <div class="header">
         <div>
           <div style="text-align: center">
             <p style="color: white; margin-bottom: 0px">Molina Bragazzi</p>
-            <p style="color: white; margin-top: 0px">Periodista xxxxx</p>
+            <p style="color: white; margin-top: 0px">Periodista Plástico</p>
           </div>
         </div>
       </div>
       <div class="content-w">
+        <!-- <h1 style="border-left: 5px solid #4267b2; padding-left: 0.5em">
+          Introducción
+        </h1> -->
         <div class="intro-wrapper">
-          <h1 style="border-left: 5px solid #4267b2; padding-left: 0.5em">
-            Introducción
-          </h1>
           <div class="intro">
+            <h1 style="border-left: 5px solid #4267b2; padding-left: 0.5em">
+              Introducción
+            </h1>
             <p>
               Lorem Ipsum es simplemente el texto de relleno de las imprentas y
               archivos de texto. Lorem Ipsum ha sido el texto de relleno
@@ -110,153 +142,164 @@
               y cosas por el estilo).
             </p>
           </div>
-        </div>
-        <h1 style="border-left: 5px solid #4267b2; padding-left: 0.5em">
-          Obras
-        </h1>
-
-        <!-- obras -->
-        <div
-          style="
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-flow: column;
-            border: 1px solid #d7cccc;
-            border-radius: 0 0 15px 15px;
-            margin-top: 3em;
-            background-color: #383431;
-            color: white; ;
-          "
-        >
-          <img
-            style="height: auto; width: 100%"
-            src="https://hudognik.net/cache/4310_gal2.jpg"
-          />
-          <div style="padding: 0 2em 2.5em 2em">
-            <h2
-              style="
-                text-align: center;
-                padding-bottom: 1em;
-                border-bottom: 1px solid white;
-              "
-            >
-              Nombre del cuadro
-            </h2>
-            <p>
-              <b>Este cuadro representa </b> Lorem Ipsum es simplemente el texto
-              de relleno de las imprentas y archivos de texto. Lorem Ipsum ha
-              sido el texto de relleno estándar de las industrias desde el año
-              1500, cuando un impresor
-            </p>
-            <p>
-              Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-              archivos de texto. Lorem Ipsum ha sido el texto de relleno
-              estándar de las industrias desde el año 1500, cuando un impresor
-              Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-              archivos de texto. Lorem Ipsum ha sido el texto de relleno
-              estándar de las industrias desde el año 1500, cuando un impresor
-              Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-              archivos de texto. Lorem Ipsum ha sido el texto de relleno
-              estándar de las industrias desde el año 1500, cuando un impresor
-            </p>
+          <div class="intro-img">
+            <img
+              width="100%"
+              style="border-radius: 25px"
+              src="https://scontent.fscl25-1.fna.fbcdn.net/v/t39.30808-6/307321020_107643735433017_2713140229815215811_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=094uII-hcQsAX9qUTu4&_nc_ht=scontent.fscl25-1.fna&oh=00_AfAaRTA3hCslcdakZM41e7ww_NlLY6KQ3u528v9lziAWfA&oe=640B4663"
+            />
+            <p style="margin-bottom: 0px">Molina Bragazzi</p>
+            <p style="margin-top: 0px">Periodista Plástico</p>
           </div>
         </div>
+        <div class="obras-wrapper">
+          <h1 style="border-left: 5px solid #4267b2; padding-left: 0.5em">
+            Obras
+          </h1>
 
-        <div
-          style="
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-flow: column;
-            border: 1px solid #d7cccc;
-            border-radius: 0 0 15px 15px;
-            margin-top: 3em;
-            background-color: #383431;
-            color: white; ;
-          "
-        >
-          <img
-            style="height: auto; width: 100%"
-            src="https://aggv.ca/wp-content/uploads/2022/01/Homepage-Background_1977.162.001-scaled-1-2560x1440.jpg"
-          />
-          <div style="padding: 0 2em 2.5em 2em">
-            <h2
-              style="
-                text-align: center;
-                padding-bottom: 1em;
-                border-bottom: 1px solid white;
-              "
-            >
-              Nombre del cuadro
-            </h2>
-            <p>
-              <b>Este cuadro representa </b> Lorem Ipsum es simplemente el texto
-              de relleno de las imprentas y archivos de texto. Lorem Ipsum ha
-              sido el texto de relleno estándar de las industrias desde el año
-              1500, cuando un impresor
-            </p>
-            <p>
-              Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-              archivos de texto. Lorem Ipsum ha sido el texto de relleno
-              estándar de las industrias desde el año 1500, cuando un impresor
-              Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-              archivos de texto. Lorem Ipsum ha sido el texto de relleno
-              estándar de las industrias desde el año 1500, cuando un impresor
-              Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-              archivos de texto. Lorem Ipsum ha sido el texto de relleno
-              estándar de las industrias desde el año 1500, cuando un impresor
-            </p>
+          <!-- obras -->
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-flow: column;
+              border: 1px solid #d7cccc;
+              border-radius: 0 0 15px 15px;
+              margin-top: 3em;
+              background-color: #383431;
+              color: white; ;
+            "
+          >
+            <img
+              style="height: auto; width: 100%"
+              src="https://hudognik.net/cache/4310_gal2.jpg"
+            />
+            <div style="padding: 0 2em 2.5em 2em">
+              <h2
+                style="
+                  text-align: center;
+                  padding-bottom: 1em;
+                  border-bottom: 1px solid white;
+                "
+              >
+                Nombre del cuadro
+              </h2>
+              <p>
+                <b>Este cuadro representa </b> Lorem Ipsum es simplemente el
+                texto de relleno de las imprentas y archivos de texto. Lorem
+                Ipsum ha sido el texto de relleno estándar de las industrias
+                desde el año 1500, cuando un impresor
+              </p>
+              <p>
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas
+                y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                estándar de las industrias desde el año 1500, cuando un impresor
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas
+                y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                estándar de las industrias desde el año 1500, cuando un impresor
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas
+                y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                estándar de las industrias desde el año 1500, cuando un impresor
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div
-          style="
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-flow: column;
-            border: 1px solid #d7cccc;
-            border-radius: 0 0 15px 15px;
-            margin-top: 3em;
-            background-color: #383431;
-            color: white; ;
-          "
-        >
-          <img
-            style="height: auto; width: 100%"
-            src="https://global-uploads.webflow.com/624e66f033c683bee88d26bb/63a400d50bd70632a5857687_TLM%20-%20M&F%20Website%20Loop%20FINAL%208MB-poster-00001.jpg"
-          />
-          <div style="padding: 0 2em 2.5em 2em">
-            <h2
-              style="
-                text-align: center;
-                padding-bottom: 1em;
-                border-bottom: 1px solid white;
-              "
-            >
-              Nombre del cuadro
-            </h2>
-            <p>
-              <b>Este cuadro representa </b> Lorem Ipsum es simplemente el texto
-              de relleno de las imprentas y archivos de texto. Lorem Ipsum ha
-              sido el texto de relleno estándar de las industrias desde el año
-              1500, cuando un impresor
-            </p>
-            <p>
-              Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-              archivos de texto. Lorem Ipsum ha sido el texto de relleno
-              estándar de las industrias desde el año 1500, cuando un impresor
-              Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-              archivos de texto. Lorem Ipsum ha sido el texto de relleno
-              estándar de las industrias desde el año 1500, cuando un impresor
-              Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-              archivos de texto. Lorem Ipsum ha sido el texto de relleno
-              estándar de las industrias desde el año 1500, cuando un impresor
-            </p>
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-flow: column;
+              border: 1px solid #d7cccc;
+              border-radius: 0 0 15px 15px;
+              margin-top: 3em;
+              background-color: #383431;
+              color: white; ;
+            "
+          >
+            <img
+              style="height: auto; width: 100%"
+              src="https://aggv.ca/wp-content/uploads/2022/01/Homepage-Background_1977.162.001-scaled-1-2560x1440.jpg"
+            />
+            <div style="padding: 0 2em 2.5em 2em">
+              <h2
+                style="
+                  text-align: center;
+                  padding-bottom: 1em;
+                  border-bottom: 1px solid white;
+                "
+              >
+                Nombre del cuadro
+              </h2>
+              <p>
+                <b>Este cuadro representa </b> Lorem Ipsum es simplemente el
+                texto de relleno de las imprentas y archivos de texto. Lorem
+                Ipsum ha sido el texto de relleno estándar de las industrias
+                desde el año 1500, cuando un impresor
+              </p>
+              <p>
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas
+                y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                estándar de las industrias desde el año 1500, cuando un impresor
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas
+                y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                estándar de las industrias desde el año 1500, cuando un impresor
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas
+                y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                estándar de las industrias desde el año 1500, cuando un impresor
+              </p>
+            </div>
           </div>
+
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-flow: column;
+              border: 1px solid #d7cccc;
+              border-radius: 0 0 15px 15px;
+              margin-top: 3em;
+              background-color: #383431;
+              color: white; ;
+            "
+          >
+            <img
+              style="height: auto; width: 100%"
+              src="https://global-uploads.webflow.com/624e66f033c683bee88d26bb/63a400d50bd70632a5857687_TLM%20-%20M&F%20Website%20Loop%20FINAL%208MB-poster-00001.jpg"
+            />
+            <div style="padding: 0 2em 2.5em 2em">
+              <h2
+                style="
+                  text-align: center;
+                  padding-bottom: 1em;
+                  border-bottom: 1px solid white;
+                "
+              >
+                Nombre del cuadro
+              </h2>
+              <p>
+                <b>Este cuadro representa </b> Lorem Ipsum es simplemente el
+                texto de relleno de las imprentas y archivos de texto. Lorem
+                Ipsum ha sido el texto de relleno estándar de las industrias
+                desde el año 1500, cuando un impresor
+              </p>
+              <p>
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas
+                y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                estándar de las industrias desde el año 1500, cuando un impresor
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas
+                y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                estándar de las industrias desde el año 1500, cuando un impresor
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas
+                y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                estándar de las industrias desde el año 1500, cuando un impresor
+              </p>
+            </div>
+          </div>
+          <!-- fin obras-->
         </div>
-        <!-- fin obras-->
       </div>
     </div>
   </body>
