@@ -38,6 +38,7 @@
     }
     .content-w {
       width: 90%;
+      max-width: 1080px;
       margin: 40px auto 30px auto;
       line-height: 2em;
     }
@@ -82,6 +83,9 @@
     .obras-wrapper {
       background-color: white;
     }
+    .img-author-intro {
+      width: 100%;
+    }
 
     @media only screen and (max-width: 768px) {
       .header {
@@ -101,16 +105,37 @@
       }
       .intro {
         padding: 2em;
+        width: 80%;
       }
       .intro-img {
-        display: none;
+        display: flex;
+        padding: 1em 1em 0 1em;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        /* display: none; */
+      }
+      .titulo-header {
+        font-size: 2em;
+        margin-top: 0.3em;
+      }
+      .subtitulo-header {
+        font-size: 1em;
+      }
+      .intro-img.names {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .img-author-intro {
+        width: 25%;
       }
     }
   </style>
   <body
     style="
       font-family: 'Poppins', sans-serif;
-      background-color: #ffffff;
       margin: 0;
     "
   >
@@ -121,7 +146,10 @@
             <p style="color: white; margin-bottom: 0px" class="titulo-header">
               Molina Bragazzi
             </p>
-            <p style="color: white; margin-top: 0px;margin-bottom: 0.2em;" class="subtitulo-header">
+            <p
+              style="color: white; margin-top: 0px; margin-bottom: 0.2em"
+              class="subtitulo-header"
+            >
               Periodista Plástico
             </p>
           </div>
@@ -137,8 +165,8 @@
               Introducción
             </h1> -->
             <p>
-              El Periodista Plástico es un pintor que trasmite noticias que sólo
-              le afectan a el mismo con un lenguaje visual persona. Es
+              El <b>Periodista Plástico</b> es un pintor que trasmite noticias que sólo
+              le afectan a el mismo con un lenguaje visual personal. Es
               independiente y es políticamente incorrecto porque sólo trasmite
               noticias que son de su propio interés. Porque no tiene Agendas que
               lo comprometan y lo presionen.
@@ -165,13 +193,14 @@
             </p>
           </div>
           <div class="intro-img">
-            <img
-              width="100%"
+            <img class="img-author-intro"
               style="border-radius: 25px"
               src="https://scontent.fscl25-1.fna.fbcdn.net/v/t39.30808-6/307321020_107643735433017_2713140229815215811_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=094uII-hcQsAX9qUTu4&_nc_ht=scontent.fscl25-1.fna&oh=00_AfAaRTA3hCslcdakZM41e7ww_NlLY6KQ3u528v9lziAWfA&oe=640B4663"
             />
-            <p style="margin-bottom: 0px">Molina Bragazzi</p>
-            <p style="margin-top: 0px">Periodista Plástico</p>
+            <div class="intro-img-names">
+              <p style="margin-bottom: 0px">Molina Bragazzi</p>
+              <p style="margin-top: 0px">Periodista Plástico</p>
+            </div>
           </div>
         </div>
         <div class="obras-wrapper">
@@ -197,7 +226,7 @@
               style="height: auto; width: 100%"
               src="https://hudognik.net/cache/4310_gal2.jpg"
             />
-            <div style="padding: 0 2em 2.5em 2em">
+            <div style="padding: 0 2em 1em 2em">
               <h2
                 style="
                   text-align: center;
@@ -206,96 +235,201 @@
                 "
               >
                 Nombre del cuadro
-              </h2>
-              <p>
-                <b>Este cuadro representa </b> Lorem Ipsum es simplemente el
-                texto de relleno de las imprentas y archivos de texto. Lorem
-                Ipsum ha sido el texto de relleno estándar de las industrias
-                desde el año 1500, cuando un impresor
-              </p>
-              <p>
-                Lorem Ipsum es simplemente el texto de relleno de las imprentas
-                y archivos de texto. Lorem Ipsum ha sido el texto de relleno
-                estándar de las industrias desde el año 1500, cuando un impresor
-                Lorem Ipsum es simplemente el texto de relleno de las imprentas
-                y archivos de texto. Lorem Ipsum ha sido el texto de relleno
-                estándar de las industrias desde el año 1500, cuando un impresor
-                Lorem Ipsum es simplemente el texto de relleno de las imprentas
-                y archivos de texto. Lorem Ipsum ha sido el texto de relleno
-                estándar de las industrias desde el año 1500, cuando un impresor
-              </p>
+              </h2>          
             </div>
-          </div>                
+          </div>
           <!-- fin obras-->
+
+          
+
           <!-- citas-->
-          <div class="intro-wrapper-cita" style="margin-top:3em">
+          <div class="intro-wrapper-cita" style="margin-top: 3em">
             <div class="intro-cita">
               <!-- <h1 style="border-left: 5px solid #4267b2; padding-left: 0.5em">
                 Introducción
               </h1> -->
               <p>
-                Yo no sé si la obra de Molina Bragazzi es buena o es mala, ese no es mi punto. Pero si pienso que es una propuesta innovadora y refrescante. El pintor cree haber descubierto un nuevo tipo de periodismo, el tiempo dirá si está en lo correcto o si esté equivocado.
+                Yo no sé si la obra de Molina Bragazzi es buena o es mala, ese
+                no es mi punto. Pero si pienso que es una propuesta innovadora y
+                refrescante. El pintor cree haber descubierto un nuevo tipo de
+                periodismo, el tiempo dirá si está en lo correcto o si está
+                equivocado.
               </p>
-             <p>
-              Visualmente tiene un pensamiento muy sesgado. Las líneas verticales siguieren el equilibrio, lo racional, las líneas diagonales sugieren lo atrevido, lo emocional, lo ilógico. Molina Bragazzi parte desde el desequilibrio navegando en pasionales aguas rumbo a las certezas. Lo dijo Paulo Piccaso “el Arte es una mentira que nos permite darnos cuenta de la verdad”
-             </p>
-             <p style="text-align: right;font-weight: bold;margin-bottom: 0px;margin-right: 5em;">Melissa Jure</p>
-             <p style="text-align: right;margin-top:-6px;font-weight: bold;margin-right: 2em;">Periodista de Greenpeace</p>
+              <p>
+                Visualmente tiene un pensamiento muy sesgado. Las líneas
+                verticales siguieren el equilibrio, lo racional, las líneas
+                diagonales sugieren lo atrevido, lo emocional, lo ilógico.
+                Molina Bragazzi parte desde el desequilibrio navegando en
+                pasionales aguas rumbo a las certezas. Lo dijo Paulo Piccaso <i>“el
+                Arte es una mentira que nos permite darnos cuenta de la verdad”</i>
+              </p>
+              <p
+                style="
+                  text-align: right;
+                  font-weight: bold;
+                  margin-bottom: 0px;
+                  margin-right: 5em;
+                "
+              >
+                Melissa Jure
+              </p>
+              <p
+                style="
+                  text-align: right;
+                  margin-top: -6px;
+                  font-weight: bold;
+                  margin-right: 2em;
+                "
+              >
+                Periodista de Greenpeace
+              </p>
             </div>
-           
-            </div>
-            <!--citas-->
           </div>
-             <!-- obras -->
-             <div
-             style="
-               display: flex;
-               justify-content: center;
-               align-items: center;
-               flex-flow: column;
-               border: 1px solid #d7cccc;
-               border-radius: 0 0 15px 15px;
-               margin-top: 3em;
-               background-color: #383431;
-               color: white; ;
-             "
-           >
-             <img
-               style="height: auto; width: 100%"
-               src="https://hudognik.net/cache/4310_gal2.jpg"
-             />
-             <div style="padding: 0 2em 2.5em 2em">
-               <h2
-                 style="
-                   text-align: center;
-                   padding-bottom: 1em;
-                   border-bottom: 1px solid white;
-                 "
-               >
-                 Nombre del cuadro
-               </h2>
-               <p>
-                 <b>Este cuadro representa </b> Lorem Ipsum es simplemente el
-                 texto de relleno de las imprentas y archivos de texto. Lorem
-                 Ipsum ha sido el texto de relleno estándar de las industrias
-                 desde el año 1500, cuando un impresor
-               </p>
-               <p>
-                 Lorem Ipsum es simplemente el texto de relleno de las imprentas
-                 y archivos de texto. Lorem Ipsum ha sido el texto de relleno
-                 estándar de las industrias desde el año 1500, cuando un impresor
-                 Lorem Ipsum es simplemente el texto de relleno de las imprentas
-                 y archivos de texto. Lorem Ipsum ha sido el texto de relleno
-                 estándar de las industrias desde el año 1500, cuando un impresor
-                 Lorem Ipsum es simplemente el texto de relleno de las imprentas
-                 y archivos de texto. Lorem Ipsum ha sido el texto de relleno
-                 estándar de las industrias desde el año 1500, cuando un impresor
-               </p>
-             </div>
-           </div>                
-           <!-- fin obras-->
+          <!--citas-->
+        </div>
+        <!-- obras -->
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+            border: 1px solid #d7cccc;
+            border-radius: 0 0 15px 15px;
+            margin-top: 3em;
+            background-color: #383431;
+            color: white; ;
+          "
+        >
+          <img
+            style="height: auto; width: 100%"
+            src="https://hudognik.net/cache/4310_gal2.jpg"
+          />
+          <div style="padding: 0 2em 1em 2em">
+            <h2
+              style="
+                text-align: center;
+                padding-bottom: 1em;
+                border-bottom: 1px solid white;
+              "
+            >
+              Nombre del cuadro
+            </h2>           
+          </div>
+        </div>
+
+        <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-flow: column;
+          border: 1px solid #d7cccc;
+          border-radius: 0 0 15px 15px;
+          margin-top: 3em;
+          background-color: #383431;
+          color: white; ;
+        "
+      >
+        <img
+          style="height: auto; width: 100%"
+          src="https://hudognik.net/cache/4310_gal2.jpg"
+        />
+        <div style="padding: 0 2em 1em 2em">
+          <h2
+            style="
+              text-align: center;
+              padding-bottom: 1em;
+              border-bottom: 1px solid white;
+            "
+          >
+            Nombre del cuadro
+          </h2>           
         </div>
       </div>
+
+      <div
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        border: 1px solid #d7cccc;
+        border-radius: 0 0 15px 15px;
+        margin-top: 3em;
+        background-color: #383431;
+        color: white; ;
+      "
+    >
+      <img
+        style="height: auto; width: 100%"
+        src="https://hudognik.net/cache/4310_gal2.jpg"
+      />
+      <div style="padding: 0 2em 1em 2em">
+        <h2
+          style="
+            text-align: center;
+            padding-bottom: 1em;
+            border-bottom: 1px solid white;
+          "
+        >
+          Nombre del cuadro
+        </h2>           
+      </div>
+    </div>
+
+    <div
+    style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      border: 1px solid #d7cccc;
+      border-radius: 0 0 15px 15px;
+      margin-top: 3em;
+      background-color: #383431;
+      color: white; ;
+    "
+  >
+    <img
+      style="height: auto; width: 100%"
+      src="https://hudognik.net/cache/4310_gal2.jpg"
+    />
+    <div style="padding: 0 2em 1em 2em">
+      <h2
+        style="
+          text-align: center;
+          padding-bottom: 1em;
+          border-bottom: 1px solid white;
+        "
+      >
+        Nombre del cuadro
+      </h2>           
+    </div>
+  </div>
+        <!-- fin obras-->
+      </div>
+
+      <!-- footer-->
+
+        <div class="header">
+        <div>
+          <div style="text-align: center">
+            <!-- <p style="color: white; margin-bottom: 0px" class="titulo-header">
+              Molina Bragazzi
+            </p> -->
+            <p
+              style="color: white; margin-top: 1em; margin-bottom: 1em"
+              class="subtitulo-header"
+            >
+              Periodista Plástico
+            </p>
+          
+          </div>
+        </div>
+      </div>
+
+      <!-- end footer-->
     </div>
   </body>
 </html>
